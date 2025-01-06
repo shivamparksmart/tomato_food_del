@@ -1,0 +1,91 @@
+.grid{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid tomato;
+  margin-top:1%;
+  margin-bottom: 2%;
+  border-radius: 5px;
+  padding: 2%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: rgb(255 239 239 / 67%)
+}
+
+.grid h3{
+  color: tomato;
+}
+
+.value{
+  font-size: x-small;
+  color: rgb(80, 78, 78);
+  margin-left:3px;
+}
+
+
+
+
+
+.Inactive{
+  background-color: rgb(131, 131, 131);
+}
+
+
+
+.Inactive h3{
+  color:  rgb(131, 131, 131);
+}
+
+.Inactive div{
+  border: 1px solid rgb(155, 155, 155);
+  border-radius: 0%;
+  -webkit-border-radius: 0%;
+  -moz-border-radius: 0%;
+  -ms-border-radius: 0%;
+  -o-border-radius: 0%;
+}
+.Inactive .value{
+  color:  rgb(114, 114, 114);
+}
+
+button{
+  background-color: tomato;
+  color: white;
+  border: none;
+  padding:5px;
+  border-radius: 25px;
+  cursor: pointer;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+
+@media(max-width:800px){
+
+.grid{
+  flex-direction: column;
+}
+
+button{
+  width: 80px;
+  align-self: center;
+}
+
+}
+
+
+@media(max-width:1200px){
+
+ h3{
+  font-size: small;
+ }
+  
+  button{
+    width: 80px;
+    align-self: center;
+  }
+  
+  }

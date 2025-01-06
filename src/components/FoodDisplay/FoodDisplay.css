@@ -1,0 +1,56 @@
+.food-display{
+  margin-top: 30px;
+}
+
+.food-display h2{
+  font-size: max(2vw, 24px);
+  font-weight: 600;
+}
+
+.food-display-list{
+  display: grid;
+  grid-template-columns:  repeat(auto-fill, minmax(200px, 1fr));
+  margin-top: 30px;
+  gap:30px;
+  row-gap: 50px;
+}
+
+
+@media (max-width:750px) {
+
+  .food-display-list{
+    display: grid;
+    grid-template-columns:  repeat(3, 200px);
+    margin-top: 30px;
+    gap:30px;
+  }
+  
+}
+
+
+@media((width < 700px) and (width >600px)){
+
+  .food-display-list{
+
+    grid-template-columns:  repeat(3, 170px);
+  }
+}
+
+
+@media((width <600px)){
+
+  .food-display-list{
+    align-items: center;
+    justify-content: center;
+    grid-template-columns:  repeat(2, 1fr);
+  }
+}
+
+/* @media((width <400px)){
+
+  .food-display-list{
+    align-items: center;
+    justify-content: center;
+    grid-template-columns:  repeat(2, 1fr);
+  }
+} */
